@@ -1,0 +1,109 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Text.RegularExpressions;
+
+public class CountDown : MonoBehaviour {
+
+	public string stringToEdit = "60";
+	public string counterText;
+
+	private bool userHasHitReturn = false;
+	private bool finalCountDown = false;
+	private float timeLeft;
+	private Vector3 pos;
+	private Vector3 tp;
+
+	public GUIText gt;
+	public GUI gu;
+//	private GameObject go;
+
+	void Start() {
+		pos = Camera.main.WorldToScreenPoint(transform.position);
+		tp = transform.position;
+
+		pos.x = pos.x / Screen.width;
+		pos.y = pos.y / Screen.height;
+
+
+		GUIText obj = GUIText.Instantiate(gt,pos, Quaternion.identity) as GUIText;
+
+//		GameObject obj = GameObject.Instantiate("Haldo", pos, Quaternion.identity) as GameObject;
+
+//		GameObject go = GameObject.Instantiate () as GameObject;
+//		go.AddComponent (GUIText);
+
+//		go.transform.position = Vector3(0.5,0.5,0.0);
+//		go.GetComponent<GUIText>().text = "Hello World";
+
+		Debug.Log ("|-o-| " + gameObject.name + "pos " + pos + " tf: " + transform.position);
+	}
+
+	void OnGUI() {
+		Event e = Event.current;
+		if (e.keyCode == KeyCode.Return) {
+
+			timeLeft = ParseStrToFloat (stringToEdit);
+			// Debug.Log (timeLeft);
+			userHasHitReturn = true;
+		} else if (false == userHasHitReturn) {
+			stringToEdit = GUI.TextField (new Rect (tp.x*10, tp.y*10, 200, 20), stringToEdit, 25);
+			stringToEdit = Regex.Replace (stringToEdit, @"[\D]", "");
+		}
+
+
+		if (finalCountDown) {
+
+			// Debug.Log ("###>>> Time left = " + counterText + " seconds");
+			GUI.TextField (new Rect (tp.x*10, tp.y*10, 200, 20), counterText, 25);
+		}
+
+	}
+
+	void FixedUpdate () {
+		if (userHasHitReturn && !finalCountDown) {
+			finalCountDown = true;
+			// Debug.Log ("Entered");
+		}
+
+		if (finalCountDown) {
+		
+
+			if (timeLeft <= 0.0f)
+			{
+				userHasHitReturn = false;
+				finalCountDown = false;
+				// Debug.Log ("You ran out of time");  
+			}
+			else
+			{
+				counterText = ParseIntToStr((int)timeLeft);
+					// Debug.Log ("Time left = " + counterText + " seconds");
+
+			}
+			timeLeft -= Time.deltaTime;
+
+		}
+
+	}
+
+	float ParseStrToFloat(string value){
+		float converted = float.Parse(value);
+		return converted;
+	}
+	int ParseFloatToInt(float value){
+		int converted = (int)value;
+		return converted;
+	}
+	int ParseStrToInt(string value){
+		int converted = int.Parse(value);
+		return converted;
+	}
+	string ParseFloatToStr(float value){
+		string converted = value.ToString();
+		return converted;
+	}
+	string ParseIntToStr(int value){
+		string converted = value.ToString();
+		return converted;
+	}
+}

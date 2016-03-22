@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Coin_pf.cs">
+    <Files>
+      <File FileName="Assets/Scripts/coins.cs" Line="110" Column="39" />
+      <File FileName="Assets/Scripts/Coin_pf.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/CountDown.cs.bak" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CountDown.cs" Line="34" Column="15" />
+      <File FileName="Assets/TimerText.cs" Line="12" Column="22" />
+      <File FileName="Assets/Scripts/LetterSpacing.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

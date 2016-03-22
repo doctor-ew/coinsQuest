@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 48fc25dc9096c40db95def6943e375f0
+timeCreated: 1448997120
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SwapShop_0
+    21300002: SwapShop_1
+    21300004: SwapShop_2
+    21300006: SwapShop_3
+    21300008: SwapShop_4
+    21300010: SwapShop_5
+    21300012: SwapShop_6
+    21300014: SwapShop_7
+    21300016: SwapShop_8
+    21300018: SwapShop_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SwapShop_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 276
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SwapShop_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 276
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SwapShop_2
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 276
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SwapShop_3
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 276
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SwapShop_4
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 276
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SwapShop_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 26
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SwapShop_6
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 26
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SwapShop_7
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 26
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SwapShop_8
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 26
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SwapShop_9
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 26
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
